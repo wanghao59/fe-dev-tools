@@ -8,3 +8,7 @@
 ## Require
 - 2016.09.18
 AMD 加载器Requirejs的实现原理
+
+## DOMReady
+- 2016.09.28
+DOMReady DOMReady的原理和实现
