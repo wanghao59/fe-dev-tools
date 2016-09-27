@@ -41,7 +41,7 @@ var ready = function(win, fn) {
             try {
                 top = !win.frameElement;
             } catch(e) {
-            
+
             }
             //判断是否是iframe，如果不是的话，就一直轮询，加载主页面
             if( top ) {
@@ -49,8 +49,8 @@ var ready = function(win, fn) {
             }
         }
         //证明dom没有加载完成，添加监听事件
-        doc.add(pre+'readystatechange',init, false);
-        doc.add(pre+'DOMContentLoaded',init, false);
-        doc.add(pre+'load',init, false);
+        doc[add](pre+'readystatechange',init, false);
+        doc[add](pre+'DOMContentLoaded',init, false);
+        doc[add](pre+'load',init, false);
     }
 }
