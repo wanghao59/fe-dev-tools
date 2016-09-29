@@ -169,8 +169,16 @@
         script.onerror = function() {
             throw Error("load script: " +url+ "failed!" );
         }
-
-        script.src = basepath + url + '.js';
+        //防止已经加载过js文件，重新加载
+		var nodes = document.getElementsByTagName("script");
+		for( var i=0;i < nodes.length; i++ ) {
+			var nodeItem = nodes[i];
+			if( nodeItem.src == url ) {
+				return;
+			} else {
+                script.src = basepath + url + '.js';
+			}
+		}
         document.getElementsByTagName("head")[0].appendChild(script);
     };
 
