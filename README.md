@@ -12,3 +12,7 @@ AMD 加载器Requirejs的实现原理
 ## DOMReady
 - 2016.09.28
 DOMReady DOMReady的原理和实现
+
+## Extend
+- 2016.10.13
+jQuery Extend的原理和实现
